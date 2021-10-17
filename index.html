@@ -25,6 +25,7 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -645,18 +646,16 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
+            <form class="php-email-form" action="#">
+              <div class=" form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars" />
+                  <input class="form-control" id="name" type="text" name="name">
                   <div class="validate"></div>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email"
-                    data-msg="Please enter a valid email" />
+                  <input class="form-control" type="text" name="email">
                   <div class="validate"></div>
                 </div>
               </div>
@@ -671,17 +670,15 @@
                 <textarea class="form-control" name="message" rows="10" data-rule="required"
                   data-msg="Please write something for us"></textarea>
                 <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit" class="rounded-pill">Send Message</button></div>
+                <div class="button-area text-center mt-5">
+                  <button type="submit" class="rounded-pill">Send Message</button>
+                  <span></span>
+                </div>
             </form>
           </div>
-
         </div>
+
+      </div>
 
       </div>
     </section><!-- End Contact Section -->
@@ -718,6 +715,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="script.js"></script>
 
   <script>
     particlesJS('particles-js',
