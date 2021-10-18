@@ -15,7 +15,6 @@ body {
 
 canvas {
   display: block;
-  vertical-align: bottom;
 }
 
 /* ---- particles.js container ---- */
@@ -151,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding-top: 30px;
+  padding-top: 30 px;
 }
 
 .nav-menu * {
@@ -286,9 +285,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
-  }
-  .li a black{
-    background-color: #006666;
   }
 }
 
