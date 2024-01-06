@@ -559,7 +559,7 @@ section {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
-  text-align: center;
+  text-align: left;
   background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
@@ -1110,6 +1110,8 @@ section {
   padding: 0;
 }
 
+
+
 @media (max-width: 768px) {
   .portfolio-details .portfolio-description h2 {
     width: 100%;
@@ -1119,6 +1121,7 @@ section {
     margin-top: 30px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -1155,3 +1158,6 @@ section {
   }
   
 }
+
+
+ 
