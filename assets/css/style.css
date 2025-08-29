@@ -1215,4 +1215,47 @@ button, .btn,
   font-family: var(--font-base) !important;
 }
 
+/* Carousel indicators as circles */
+.carousel-indicators [data-bs-target] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  margin: 0 6px;
+  opacity: 0.7;
+  transition: opacity 0.2s, background 0.2s, border 0.2s;
+}
+.carousel-indicators .active {
+  background-color: #007bff;
+  opacity: 1;
+  border: 2px solid #0056b3;
+}
+.carousel-indicators [data-bs-target]:hover,
+.carousel-indicators [data-bs-target]:focus {
+  opacity: 1;
+  background-color: #e3f2fd;
+  border: 2px solid #0056b3;
+}
+
+/* Center carousel arrows vertically and style */
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% 60%;
+  filter: drop-shadow(0 0 2px #007bff);
+}
+
 
