@@ -1,3 +1,4 @@
+@import url('https://db.onlinewebfonts.com/c/3d18c62185ee82746907f855396b52a5?family=Nexus+Sans+Pro');
 /**
 * Template Name: iPortfolio - v1.3.0
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -9,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-base);
   color: #2d2b2c;
 }
 
@@ -39,7 +40,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: inherit;
 }
 
 /*--------------------------------------------------------------
@@ -103,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: inherit;
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
@@ -260,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: inherit;
 }
 
 #hero p span {
@@ -392,7 +393,7 @@ section {
 .facts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: #006666;
 }
@@ -403,7 +404,7 @@ section {
   margin-top: 20px;
   color: #122f57;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: inherit;
   transition: ease-in-out 0.3s;
 }
 
@@ -426,7 +427,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: inherit;
   color: #050d18;
 }
 
@@ -469,7 +470,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: inherit;
   color: #2d2b2c;
   margin-bottom: 10px;
 }
@@ -1160,4 +1161,58 @@ section {
 }
 
 
- 
+/* -------------------------------------------------------------
+   Typography override: Nexus Sans Pro across the site
+   Note: This enforces Nexus Sans Pro if available on the device.
+   To self-host, place font files under assets/fonts/ and uncomment
+   the @font-face blocks below, updating URLs to your files.
+-------------------------------------------------------------- */
+
+/* Example (uncomment and provide actual files)
+@font-face {
+  font-family: "Nexus Sans Pro";
+  src: url("../fonts/NexusSansPro-Regular.woff2") format("woff2"),
+       url("../fonts/NexusSansPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nexus Sans Pro";
+  src: url("../fonts/NexusSansPro-Bold.woff2") format("woff2"),
+       url("../fonts/NexusSansPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+:root {
+  --font-base: "Nexus Sans Pro", "NexusSansPro", "Nexus Sans", Arial, Helvetica, sans-serif;
+}
+
+/* Apply to common text elements but avoid overriding icon fonts */
+body,
+h1, h2, h3, h4, h5, h6,
+p, a, span, strong, em,
+label, input, select, textarea,
+button, .btn,
+.nav-menu a,
+#header .profile h1,
+#hero p,
+.facts .count-box p,
+.facts .count-box a,
+.skills .progress .skill,
+.resume .resume-item h4,
+.services .title,
+.portfolio-details .portfolio-info,
+.breadcrumbs h2,
+.contact .info h4,
+.contact .info p,
+.contact .php-email-form input,
+.contact .php-email-form textarea,
+.contact .php-email-form button {
+  font-family: var(--font-base) !important;
+}
+
+

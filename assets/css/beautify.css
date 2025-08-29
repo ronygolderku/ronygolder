@@ -1,0 +1,165 @@
+/* Publications styling */
+.research .pub-item {
+  padding: 0.4rem 0 0.8rem;
+  border-bottom: none; /* lines shown after year headings instead */
+}
+.research .pub-title {
+  font-size: 1.25rem;
+  font-weight: 400; /* not bold */
+  line-height: 1.35;
+  margin: 0 0 0.25rem 0;
+}
+.research .pub-title a {
+  color: #6f42c1; /* purple-like link similar to UWA page */
+  text-decoration: none;
+}
+.research .pub-title a:hover { text-decoration: underline; }
+.research .pub-authors {
+  color: #6c757d; /* muted */
+  font-size: 0.98rem;
+  margin-bottom: 0.25rem;
+}
+.research .pub-meta {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+/* highlight own name without bold in authors */
+.research .pub-authors strong {
+  color: #0d6efd;
+  font-weight: 400; /* not bold */
+}
+
+/* Remove bullets and left indent for year publication lists */
+.research h4.researh-title[id^="y"] + ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Add a separator line only after the year heading, not per item */
+.research h4.researh-title[id^="y"] {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Education cards: subtle style distinct from Training */
+.resume .education-card {
+  border-left: 4px solid #0d6efd;
+  background-color: #f8f9fa; /* light gray */
+}
+.resume .education-card .card-body {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+.resume .education-card img {
+  max-width: 72px;
+  max-height: 72px;
+  object-fit: contain; /* preserve logo aspect */
+  background-color: #fff; /* looks better for logos */
+  padding: 4px;
+  border-radius: 6px; /* subtle rounding for logos */
+}
+.resume .education-card .card-title {
+  font-weight: 500; /* a bit heavier than normal */
+}
+
+/* Work Experience: LinkedIn-like timeline */
+.resume .experience-timeline {
+  position: relative;
+  margin-left: 0.5rem;
+  padding-left: 1.25rem; /* space for the line */
+}
+.resume .experience-timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0.3rem;
+  bottom: 0;
+  width: 2px;
+  background: #e0e3e7;
+}
+.resume .experience-timeline .resume-item {
+  position: relative;
+  padding-left: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.resume .experience-timeline .resume-item::before {
+  content: "";
+  position: absolute;
+  left: -0.1rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border: 2px solid #0d6efd;
+  border-radius: 50%;
+}
+.resume .experience-timeline h4 { margin-bottom: 0.25rem; }
+.resume .experience-timeline h5 { margin: 0; font-weight: 500; }
+.resume .experience-timeline .exp-location { color: #6c757d; margin: 0.25rem 0 0.25rem; }
+
+/* Experience card with logo */
+.resume .experience-timeline .exp-card { display: grid; grid-template-columns: 48px 1fr; gap: 0.75rem; align-items: start; }
+.resume .experience-timeline .exp-logo { width: 48px; height: 48px; border: 1px solid #e9ecef; border-radius: 8px; background: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.resume .experience-timeline .exp-logo img { width: 100%; height: 100%; object-fit: contain; }
+.resume .experience-timeline .logo-fallback { font-weight: 600; color: #0d6efd; font-size: 0.8rem; }
+.resume .experience-timeline .exp-content h4 { margin: 0 0 0.1rem 0; }
+.resume .experience-timeline .exp-content h5 { margin: 0 0 0.1rem 0; font-weight: 500; }
+.resume .experience-timeline .exp-meta { color: #6c757d; font-size: 0.95rem; margin-bottom: 0.25rem; }
+.resume .experience-timeline .exp-skills { margin-top: 0.25rem; }
+.resume .experience-timeline .chip { display: inline-block; margin-right: 0.35rem; margin-top: 0.25rem; padding: 0.08rem 0.5rem; border-radius: 999px; background: #f1f3f5; color: #495057; font-size: 0.85rem; border: 1px solid #e9ecef; }
+
+/* Work Experience: LinkedIn-like grouped company cards */
+.resume .company-list { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+.resume .company-card { border: 1px solid #e9ecef; border-radius: 10px; background: #fff; padding: 0.75rem; display: grid; grid-template-columns: 56px 1fr; gap: 0.75rem; }
+.resume .company-logo { width: 56px; height: 56px; border: 1px solid #e9ecef; border-radius: 10px; background: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.resume .company-logo img { width: 100%; height: 100%; object-fit: contain; }
+.resume .company-body { display: flex; flex-direction: column; gap: 0.35rem; }
+.resume .company-header { display: flex; flex-direction: column; }
+.resume .company-name { margin: 0; font-weight: 400; }
+.resume .company-meta { color: #6c757d; font-size: 0.95rem; }
+.resume .company-location { color: #6c757d; font-size: 0.95rem; }
+.resume .role-list { display: grid; grid-template-columns: 1fr; gap: 0.6rem; margin-top: 0.25rem; position: relative; padding-left: 0; }
+/* segmented lines: only per role when multiple */
+.resume .role-item { position: relative; }
+.resume .role-list.multiple { padding-left: 0; }
+/* draw a short left segment per role without shifting text */
+.resume .role-list.multiple .role-item { padding-left: 0; margin-left: 0; }
+.resume .role-list.multiple .role-item::before { content: ""; position: absolute; left: -10px; top: 0.35rem; bottom: 0.35rem; width: 2px; background: teal; }
+.resume .role-title { font-weight: 500; }
+.resume .role-type { color: #6c757d; font-weight: 400; }
+.resume .role-meta, .resume .role-site { color: #6c757d; font-size: 0.95rem; }
+.resume .role-skills .chip { display: inline-block; margin-right: 0.35rem; margin-top: 0.25rem; padding: 0.08rem 0.5rem; border-radius: 999px; background: #f1f3f5; color: #495057; font-size: 0.85rem; border: 1px solid #e9ecef; }
+
+/* Ocean Cruises: ship cards */
+.resume .cruise-list { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+.resume .cruise-card { display: flex; gap: 0.75rem; padding: 0.75rem; border: 1px solid #e9ecef; border-radius: 8px; background: #fff; }
+.resume .cruise-icon { color: #0d6efd; font-size: 1.5rem; display: flex; align-items: start; }
+.resume .cruise-body h4 { margin: 0 0 0.25rem 0; font-weight: 500; }
+.resume .cruise-body .cruise-meta { color: #6c757d; font-size: 0.95rem; }
+.resume .cruise-body .date-badge { display: inline-block; background: #f0f6ff; color: #0d6efd; border: 1px solid #cfe2ff; border-radius: 999px; padding: 0.1rem 0.5rem; margin-right: 0.35rem; font-size: 0.88rem; }
+
+/* Awards: ribbon header with year badge */
+.resume .awards-list { display: grid; grid-template-columns: 1fr; gap: 0.65rem; }
+.resume .award-card { border: 1px solid #e9ecef; background: #fff; border-radius: 8px; padding: 0.75rem; }
+.resume .award-card .award-header { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; border-left: 4px solid #ffc107; padding-left: 0.5rem; }
+.resume .award-card h4 { margin: 0; font-weight: 500; }
+.resume .award-card .award-year { background: #fff3cd; color: #7a5b00; border: 1px solid #ffe69c; border-radius: 6px; padding: 0.05rem 0.4rem; font-size: 0.9rem; }
+/* Award benefit detail */
+.resume .award-card .award-benefit { color: #495057; font-size: 0.95rem; margin-top: 0.25rem; }
+/* Multiple benefits */
+.resume .award-card .award-benefits { margin: 0.35rem 0 0 0; padding-left: 1.2rem; color: #495057; }
+.resume .award-card .award-benefits li { margin-bottom: 0.2rem; }
+
+/* Affiliations: modern card grid */
+.resume .affiliations-list { display: grid; grid-template-columns: 1fr; gap: 0.65rem; }
+.resume .affiliation-card { border: 1px solid #e9ecef; background: #fff; border-radius: 10px; padding: 0.6rem 0.75rem; display: grid; grid-template-columns: 48px 1fr; gap: 0.75rem; align-items: start; }
+.resume .aff-logo { width: 48px; height: 48px; border: 1px solid #e9ecef; border-radius: 10px; background: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.resume .aff-logo img { width: 100%; height: 100%; object-fit: contain; }
+.resume .aff-logo .logo-fallback { font-weight: 600; color: #0d6efd; font-size: 0.8rem; letter-spacing: 0.5px; }
+.resume .aff-body { display: flex; flex-direction: column; gap: 0.2rem; }
+.resume .aff-header { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.resume .aff-name { margin: 0; font-weight: 500; font-size: 1.05rem; }
+.resume .aff-badge { display: inline-block; border: 1px solid #e9ecef; background: #f8f9fa; color: #495057; border-radius: 999px; padding: 0.05rem 0.45rem; font-size: 0.85rem; }
+.resume .aff-meta { color: #6c757d; font-size: 0.95rem; }
