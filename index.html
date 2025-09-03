@@ -26,7 +26,7 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -52,7 +52,9 @@
               class="bx bxl-linkedin"></i></a>
           <a href="https://github.com/ronygolderku" class="github" target="_blank"><i class="bx bxl-github"></i></a>
           <a href="https://www.researchgate.net/profile/Md-Golder" target="_blank" rel="noopener noreferrer"><i class="fab fa-researchgate"></i></a>
-          <a href="https://twitter.com/rony_golderku" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a href="https://twitter.com/rony_golderku" class="twitter" target="_blank" aria-label="X (formerly Twitter)">
+            <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
+          </a>
           <!-- <a href="https://orcid.org/0000-0002-6863-139X" class="orcid" target="_blank" rel="noopener noreferrer"><i class="fab fa-orcid"></i></a> -->
           <a href="https://scholar.google.com/citations?user=yXg7upIAAAAJ&hl=en" class="scholar" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i></a>
         </div>
@@ -78,9 +80,13 @@
     <div id="particles-js"></div>
     <div class="hero-container" data-aos="fade-in">
       <h1>Md Rony Golder</h1>
-    <p>I' m <span class="typed"
-      data-typed-items="Research Assistant (UWA), Marine Biologist, GIS Specialist, Oceanographer, Coastal and Marine Analyst"></span>
-      </p>
+      <article role="article" aria-label="Role summary">
+        <p>
+          <span id="im-a-label">I'm a </span>
+          <span class="typed" aria-live="polite" role="status" aria-atomic="true"
+            data-typed-items="Research Assistant (WAMSI), Marine Biologist, GIS Specialist, Oceanographer, Coastal and Marine Analyst"></span>
+        </p>
+      </article>
     </div>
   </section>
   <!-- End Hero -->
@@ -109,6 +115,39 @@
   <script src="script.js"></script>
 
   <script>
+    // Ensure the correct indefinite article ('a' vs 'an') appears before the typed role.
+    (function () {
+      try {
+        var typedEl = document.querySelector('.typed');
+        var label = document.getElementById('im-a-label');
+        if (!typedEl || !label) return;
+
+        function needsAn(word) {
+          if (!word) return false;
+          var w = word.trim().toLowerCase();
+          // basic vowel-sound test (a, e, i, o, u). Covers most common cases.
+          return /^[aeiou]/.test(w);
+        }
+
+        function updateLabelFor(text) {
+          var article = needsAn(text) ? 'an ' : 'a ';
+          label.textContent = "I'm " + article;
+        }
+
+        // initial attempt: use the visible text or the first item from data-typed-items
+        var initial = (typedEl.textContent && typedEl.textContent.trim()) || (typedEl.getAttribute('data-typed-items') || '').split(',')[0] || '';
+        updateLabelFor(initial);
+
+        // Watch for changes made by Typed.js and update the article accordingly
+        var mo = new MutationObserver(function () {
+          updateLabelFor(typedEl.textContent || '');
+        });
+        mo.observe(typedEl, { characterData: true, childList: true, subtree: true });
+      } catch (e) {
+        // silent fail — site should still work without this helper
+        console.error('article helper error', e);
+      }
+    })();
     particlesJS('particles-js',
       {
         "particles": {
