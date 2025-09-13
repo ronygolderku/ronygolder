@@ -76,6 +76,7 @@
               <a class="btn btn-light btn-sm border" href="https://www.researchgate.net/profile/Md-Golder" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate profile">
                 <i class="fab fa-researchgate"></i> ResearchGate
               </a>
+              <!-- Press/Media moved to Resume section -->
               <a class="btn btn-light btn-sm border" href="http://www.scopus.com/inward/authorDetails.url?authorID=57226775186&partnerID=8YFLogxK" target="_blank" rel="noopener noreferrer" aria-label="Scopus profile">
                 <i class="fas fa-database"></i> Scopus
               </a>
@@ -94,6 +95,7 @@
             <span class="mx-2">•</span>
             <span id="sum-thesis">Theses: —</span>
           </div>
+          <!-- Press/Media content moved to Resume (id="press" preserved there) -->
           <h4 class="researh-title" id="y2025">2025</h4>
           <ul>
             <li>
@@ -473,8 +475,9 @@
     // Auto-count categories for the summary bar based on current DOM
     (function () {
       try {
-        var container = document.querySelector('section.research .container');
-        if (!container) return;
+  // Page uses .container-fluid here; accept either .container or .container-fluid
+  var container = document.querySelector('section.research .container, section.research .container-fluid');
+  if (!container) return;
 
   // Collect all list items under each year block (years have id="yYYYY"); exclude Thesis section
   var yearBlocks = Array.from(container.querySelectorAll('h4.researh-title[id^="y"] + ul'));
