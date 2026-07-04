@@ -38,8 +38,6 @@
           loading="lazy" decoding="async">
         <h1 class="text-light"><a href="index.html">Md Rony Golder</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/ronygolderku/" class="facebook" target="_blank"><i
-              class="bx bxl-facebook"></i></a>
           <a href="https://www.linkedin.com/in/ronygolder/" class="linkedin" target="_blank"><i
               class="bx bxl-linkedin"></i></a>
           <a href="https://github.com/ronygolderku" class="github" target="_blank"><i class="bx bxl-github"></i></a>
@@ -48,7 +46,7 @@
           <a href="https://twitter.com/rony_golderku" class="twitter" target="_blank" aria-label="X (formerly Twitter)">
             <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
           </a>
-          <!-- <a href="https://orcid.org/0000-0002-6863-139X" target="_blank" rel="noopener noreferrer"><i class="fab fa-orcid"></i></a> -->
+          <a href="https://orcid.org/0000-0002-6863-139X" target="_blank" rel="noopener noreferrer" aria-label="ORCID Profile"><i class="fab fa-orcid"></i></a>
           <a href="https://scholar.google.com/citations?user=yXg7upIAAAAJ&hl=en" target="_blank"
             rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i></a>
         </div>
@@ -95,20 +93,124 @@
               </a>
             </span>
           </h2>
+          <!-- Research Metrics Dashboard -->
+          <div class="card border-0 shadow-sm mb-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="card-body text-white">
+              <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                <h5 class="mb-0 text-white"><i class="fas fa-chart-line"></i> Research Metrics Overview</h5>
+                <small class="text-white-50">
+                  <i class="fas fa-calendar-alt"></i> Last updated: <span id="metrics-date">July 2026</span>
+                  <span class="mx-1">•</span>
+                  Source: <a href="http://www.scopus.com/inward/authorDetails.url?authorID=57226775186&partnerID=8YFLogxK" target="_blank" class="text-white text-decoration-underline">Scopus</a>
+                </small>
+              </div>
+              <div class="row text-center g-3">
+                <div class="col-md-2 col-6">
+                  <div class="metric-box">
+                    <h3 class="mb-0 fw-bold text-white" id="metric-total">27</h3>
+                    <small class="text-white-50">Total Outputs</small>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6">
+                  <div class="metric-box">
+                    <h3 class="mb-0 fw-bold text-white" id="metric-peer-reviewed">18</h3>
+                    <small class="text-white-50">Peer-Reviewed</small>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6">
+                  <div class="metric-box">
+                    <h3 class="mb-0 fw-bold text-white" id="metric-reviews">6</h3>
+                    <small class="text-white-50">Review Articles</small>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6">
+                  <div class="metric-box">
+                    <h3 class="mb-0 fw-bold text-white" id="metric-hindex">7</h3>
+                    <small class="text-white-50">H-Index</small>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6">
+                  <div class="metric-box">
+                    <h3 class="mb-0 fw-bold text-white" id="metric-citations">95</h3>
+                    <small class="text-white-50">Citations</small>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6">
+                  <div class="metric-box">
+                    <h3 class="mb-0 fw-bold text-white" id="metric-theses">2</h3>
+                    <small class="text-white-50">Theses</small>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3 text-center">
+                <small class="text-white-50"><i class="fas fa-info-circle"></i> Research Areas: Ocean Color Remote Sensing • Biological Oceanography • GIS • Marine Ecology</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Update Instructions (Hidden by default - for your reference) -->
+          <script>
+            /*
+            TO UPDATE RESEARCH METRICS:
+
+            1. Check your latest stats from Scopus or Google Scholar
+            2. Update the values below:
+            */
+
+            // EDIT THESE VALUES WHEN YOUR METRICS CHANGE:
+            const researchMetrics = {
+              lastUpdated: "July 2026",        // Change this to current month/year
+              totalOutputs: 27,                 // Total research outputs
+              peerReviewed: 18,                 // Peer-reviewed articles
+              reviewArticles: 6,                // Review articles
+              hIndex: 7,                        // H-index from Scopus
+              citations: 95,                    // Total citations
+              theses: 2                         // Thesis count
+            };
+
+            // Auto-apply the values (no need to edit below this line)
+            document.addEventListener('DOMContentLoaded', function() {
+              document.getElementById('metrics-date').textContent = researchMetrics.lastUpdated;
+              document.getElementById('metric-total').textContent = researchMetrics.totalOutputs;
+              document.getElementById('metric-peer-reviewed').textContent = researchMetrics.peerReviewed;
+              document.getElementById('metric-reviews').textContent = researchMetrics.reviewArticles;
+              document.getElementById('metric-hindex').textContent = researchMetrics.hIndex;
+              document.getElementById('metric-citations').textContent = researchMetrics.citations;
+              document.getElementById('metric-theses').textContent = researchMetrics.theses;
+            });
+          </script>
+
+          <!-- Under Review Section -->
+          <div class="alert alert-warning border-0 shadow-sm mb-4">
+            <h4 class="mb-3"><i class="icofont-pen-alt-4"></i> Manuscripts Under Review</h4>
+            <ul class="mb-0">
+              <li class="mb-3">
+                <strong>Golder, M. R.</strong>, & Antoine, D. (2026). Antarctic Sea-ice Extent Anomalies Impact Interannual Variability of Phytoplankton Chlorophyll-a in Southern Ocean Frontal Zones. <em>Geophysical Research Letters</em>.
+                <span class="badge bg-warning text-dark ms-2">Under Review</span>
+              </li>
+              <li>
+                Shammi, A. T., et al. (2026). Assessing Environmental Services and Recreational Value of Jashore Pouro Park In Jashore District of Bangladesh. <em>Heliyon</em>.
+                <span class="badge bg-warning text-dark ms-2">Under Review</span>
+              </li>
+            </ul>
+          </div>
+
           <h4 class="researh-title">Published Papers (selected)</h4>
           <div class="mb-3 d-flex flex-wrap gap-2">
+            <a href="#y2026" class="btn btn-outline-primary btn-sm">2026</a>
             <a href="#y2025" class="btn btn-outline-primary btn-sm">2025</a>
             <a href="#y2023" class="btn btn-outline-primary btn-sm">2023</a>
             <a href="#y2022" class="btn btn-outline-primary btn-sm">2022</a>
             <a href="#y2021" class="btn btn-outline-primary btn-sm">2021</a>
             <a href="#y2020" class="btn btn-outline-primary btn-sm">2020</a>
           </div>
-          <div id="pub-summary" class="my-3 text-muted small">
-            <span id="sum-articles">Articles: —</span>
-            <span class="mx-2">•</span>
-            <span id="sum-thesis">Theses: —</span>
-          </div>
           <!-- Press/Media content moved to Resume (id="press" preserved there) -->
+          <h4 class="researh-title" id="y2026">2026</h4>
+          <ul>
+            <li>
+              Thornber, K., Haque, M. M., Rouf, M. A., Fardoshi, T., Hasan, N. A., <strong>Golder, M. R.</strong>, Bashar, A., Debnath, P. P., Rahman, M. M., Kawahigashi, D., Chadag, V. M., & Tyler, C. R. (2026). Improving sustainable water usage in extensive shrimp aquaculture in Bangladesh. <em>Aquaculture</em>, 624, 744134. <a class="text-primary" target="_blank" rel="noopener" href="https://doi.org/10.1016/j.aquaculture.2026.744134">https://doi.org/10.1016/j.aquaculture.2026.744134</a>
+            </li>
+          </ul>
           <h4 class="researh-title" id="y2025">2025</h4>
           <ul>
             <li>
@@ -287,9 +389,6 @@
                 rel="noopener">https://doi.org/10.5281/zenodo.4270719</a>
             </li>
           </ul>
-          <br>
-          <h4 class="researh-title">Under Review</h4>
-          <p>None listed currently.</p>
           <br>
           <h4 class="researh-title">Peer-Reviewed Articles for:</h4>
           <div class="row skills-content">

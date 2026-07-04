@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Resume | Md Rony Golder</title>
-  <meta name="description" content="Resume of Md Rony Golder: education, experience, publications, and affiliations.">
-  <meta property="og:title" content="Resume | Md Rony Golder">
+  <title>Resume | Dr. Md Rony Golder - Research Fellow & Marine Scientist</title>
+  <meta name="description"
+    content="CV of Dr. Md Rony Golder: Research Fellow at UWA, PhD in Spatial Science (under examination), ocean color remote sensing specialist, 27 research outputs, h-index 7. Experience: BMT Consultant, WAMSI Data Analyst, Curtin University Academic.">
+  <meta property="og:title" content="Resume | Dr. Md Rony Golder - Research Fellow at UWA">
   <meta property="og:description"
-    content="Education, experience, and training in marine science, GIS, and remote sensing.">
+    content="Comprehensive CV: Research Fellow specializing in ocean color remote sensing, biological oceanography, TUFLOW modeling, satellite data analysis, marine GIS, and environmental science.">
   <meta property="og:image" content="assets/img/profile-img.png">
   <meta name="twitter:card" content="summary_large_image">
   <link href="assets/img/favicon.png" rel="icon">
@@ -49,6 +50,16 @@
       max-width: 160px;
       white-space: nowrap;
     }
+
+    /* Training and Conference cards - consistent height */
+    #resume .card .card-body {
+      min-height: 100px;
+    }
+
+    /* Education cards - consistent height */
+    .education-card .card-body {
+      min-height: 140px;
+    }
   </style>
 </head>
 
@@ -63,8 +74,6 @@
           loading="lazy" decoding="async">
         <h1 class="text-light"><a href="index.html">Md Rony Golder</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/ronygolderku/" class="facebook" target="_blank"><i
-              class="bx bxl-facebook"></i></a>
           <a href="https://www.linkedin.com/in/ronygolder/" class="linkedin" target="_blank"><i
               class="bx bxl-linkedin"></i></a>
           <a href="https://github.com/ronygolderku" class="github" target="_blank"><i class="bx bxl-github"></i></a>
@@ -73,7 +82,8 @@
           <a href="https://twitter.com/rony_golderku" class="twitter" target="_blank" aria-label="X (formerly Twitter)">
             <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
           </a>
-          <!-- <a href="https://orcid.org/0000-0002-6863-139X" target="_blank" rel="noopener noreferrer"><i class="fab fa-orcid"></i></a> -->
+          <a href="https://orcid.org/0000-0002-6863-139X" target="_blank" rel="noopener noreferrer"
+            aria-label="ORCID Profile"><i class="fab fa-orcid"></i></a>
           <a href="https://scholar.google.com/citations?user=yXg7upIAAAAJ&hl=en" target="_blank"
             rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i></a>
         </div>
@@ -117,17 +127,20 @@
           <div class="col-lg-6" data-aos="fade-up">
             <h3 class="resume-title text-uppercase">Summary</h3>
             <div class="resume-item pb-0">
-              <h4>Md Rony Golder</h4>
-              <p><em>Consultant at BMT and Research Officer at The University of Western Australia, where he validates
-                  numerical and AED model outputs using satellite and in situ observations, with a focus on
-                  hydrodynamics, water quality, and biogeochemical processes. He also serves as a Research Assistant
-                  (Data Analyst) with WAMSI/SEAF and as a Sessional Academic at Curtin University. Remote sensing and
-                  Geographic Information Systems (GIS) specialist focused on ocean colour, ocean optics, and marine
-                  ecology.</em></p>
+              <h4>Md Rony Golder, PhD (Under Examination)</h4>
+              <p><em>Research Fellow at The University of Western Australia specializing in ocean color remote sensing,
+                  biological oceanography, and marine ecosystem modeling. PhD candidate in Spatial Science with 27
+                  research outputs including 18 peer-reviewed articles (h-index: 7, 95 citations - Scopus). Core
+                  expertise: water quality assessment, TUFLOW/AED model validation, satellite data analysis, GIS, and
+                  marine biogeochemical processes. Previously: Consultant at BMT, Research Officer at UWA, Data Analyst
+                  at WAMSI/SEAF, Casual Academic at Curtin University, Visiting Fellow at Université de Brest, and
+                  Research Intern at CSIRO.</em></p>
               <ul>
-                <li>Perth, Western Australia</li>
-                <li>+61 (0) 480 465 xxx</li>
-                <li>mdrony.golder@uwa.edu.au; ronygolderku@gmail.com</li>
+                <li><i class="icofont-location-pin"></i> Perth, Western Australia</li>
+                <li><i class="icofont-phone"></i> Available upon request</li>
+                <li><i class="icofont-envelope"></i> mdrony.golder@uwa.edu.au; ronygolderku@gmail.com</li>
+                <li><i class="icofont-link"></i> <a href="https://orcid.org/0000-0002-6863-139X" target="_blank"
+                    class="text-primary">ORCID: 0000-0002-6863-139X</a></li>
               </ul>
             </div>
 
@@ -161,8 +174,9 @@
                     <div class="card-body py-2">
                       <h5 class="card-title mb-1"><i class="icofont-graduate"></i> Doctor of Philosophy in
                         <strong>Spatial Science</strong>
+                        <span class="badge bg-warning text-dark ms-2">Under Examination</span>
                       </h5>
-                      <div class="small text-muted">2022 – 2026 (Thesis submitted)</div>
+                      <div class="small text-muted">2022 – 2026 (Thesis submitted: 18 March 2026)</div>
                       <div class="small text-muted"><a href="https://www.curtin.edu.au/" target="_blank" rel="noopener"
                           class="text-primary text-decoration-none">Curtin University</a>, Bentley WA 6102, Australia
                       </div>
@@ -228,9 +242,34 @@
             </div>
 
             <h3 class="resume-title text-uppercase">Training and Conferences</h3>
+
+            <!-- Training & Conferences Dashboard -->
+            <div class="card border-0 shadow-sm mb-3" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+              <div class="card-body text-white py-3">
+                <div class="row text-center g-2">
+                  <div class="col-3">
+                    <h4 class="mb-0 fw-bold">8</h4>
+                    <small style="font-size: 0.85rem;">Events</small>
+                  </div>
+                  <div class="col-3">
+                    <h4 class="mb-0 fw-bold">5</h4>
+                    <small style="font-size: 0.85rem;">Countries</small>
+                  </div>
+                  <div class="col-3">
+                    <h4 class="mb-0 fw-bold">3</h4>
+                    <small style="font-size: 0.85rem;">Training</small>
+                  </div>
+                  <div class="col-3">
+                    <h4 class="mb-0 fw-bold">5</h4>
+                    <small style="font-size: 0.85rem;">Conferences</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- 2026: Ocean Sciences Meeting (Poster Presentation) -->
             <div class="resume-item">
-              <div class="card mb-2 p-2">
+              <div class="card mb-2 p-2 h-100">
                 <div class="row g-0 align-items-center">
                   <div class="col-md-2 text-center">
                     <img src="assets/img/OSM26.jpg" class="img-fluid rounded" alt="Ocean Sciences Meeting 2026"
@@ -508,6 +547,27 @@
 
             <!-- Affiliations moved below Online Courses -->
             <h3 class="resume-title text-uppercase">Online Courses</h3>
+
+            <!-- Online Courses Dashboard -->
+            <div class="card border-0 shadow-sm mb-3" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+              <div class="card-body text-dark py-3">
+                <div class="row text-center g-2">
+                  <div class="col-4">
+                    <h4 class="mb-0 fw-bold">6</h4>
+                    <small style="font-size: 0.85rem;">Courses</small>
+                  </div>
+                  <div class="col-4">
+                    <h4 class="mb-0 fw-bold">Esri</h4>
+                    <small style="font-size: 0.85rem;">Platform</small>
+                  </div>
+                  <div class="col-4">
+                    <h4 class="mb-0 fw-bold">36</h4>
+                    <small style="font-size: 0.85rem;">Weeks</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Esri MOOCs (card style like Training) -->
             <!-- 2024: Make an Impact with Modern Geo Apps -->
             <div class="resume-item">
@@ -654,6 +714,27 @@
             <a target="_blank" href="https://www.linkedin.com/in/ronygolder/"
               class="btn btn-secondary rounded-pill">View All Courses</a>
 
+            <h3 class="resume-title text-uppercase">Ocean Cruises</h3>
+            <div class="cruise-list">
+              <div class="cruise-card">
+                <div class="cruise-icon"><i class="icofont-ship"></i></div>
+                <div class="cruise-body">
+                  <h4>Expedition To the Swatch of No Ground in the Bay of Bengal with BNS Surma (Bangladesh Navy Ship)
+                  </h4>
+                  <div class="cruise-meta"><span class="date-badge">23–25 January, 2017</span> <em>Arranged by
+                      Bangladesh Navy and Khulna University</em></div>
+                </div>
+              </div>
+              <div class="cruise-card">
+                <div class="cruise-icon"><i class="icofont-ship"></i></div>
+                <div class="cruise-body">
+                  <h4>Expedition To the edge of Bangladesh Maritime Boundary in the Bay of Bengal with BNS Turag</h4>
+                  <div class="cruise-meta"><span class="date-badge">5–7 December, 2019</span> <em>Arranged by Bangladesh
+                      Navy and Khulna University</em></div>
+                </div>
+              </div>
+            </div>
+
             <h3 class="resume-title text-uppercase">Affiliations</h3>
             <div class="affiliations-list">
               <div class="affiliation-card">
@@ -742,41 +823,97 @@
               </div>
             </div>
 
+            <!-- Recommendations Section -->
+            <h3 class="resume-title text-uppercase mt-4">Recommendations</h3>
+            <div class="card mb-2 p-2 shadow-sm">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-3 text-center">
+                  <img src="assets/img/Alicia.jpg" class="img-fluid rounded-circle" alt="Alicia Sutton"
+                    style="max-width: 100px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body py-2">
+                    <h6 class="card-title mb-1">
+                      <span class="text-primary">Alicia Sutton</span>
+                      <span class="badge bg-success ms-2">New</span>
+                    </h6>
+                    <p class="small text-muted mb-2"><em>Research Manager at WAMSI</em> • January 23, 2026 (Mentor)</p>
+                    <p class="small mb-0 fst-italic">"Rony would make a valued member of any team. He approaches tasks with skill, professionalism and efficiency and is always willing to tackle challenges. Rony is highly motivated to find solutions, and goes above and beyond to address needs and value add. I've enjoyed collaborating with Rony and hope to continue to in the future."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2 p-2 shadow-sm">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-3 text-center">
+                  <img src="assets/img/Todd.jpg" class="img-fluid rounded-circle" alt="Todd Robinson"
+                    style="max-width: 100px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body py-2">
+                    <h6 class="card-title mb-1">
+                      <span class="text-primary">Todd Robinson</span>
+                      <span class="badge bg-success ms-2">New</span>
+                    </h6>
+                    <p class="small text-muted mb-2"><em>Associate Professor at Curtin University</em> • August 26, 2025 (Environmental Applications of GIS & Remote Sensing, Applied GIS, Applied Remote Sensing)</p>
+                    <p class="small mb-0 fst-italic">"Every now and then you meet a PhD student that is just that little bit extra. You know the type. They are almost always online and very responsive. They're the right mix of talent and drive. They are organised and capable. You can trust them with heavy teaching materials and know they will deliver. These guys really earn their doctorate. Rony is one of these guys."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2 p-2 shadow-sm">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-3 text-center">
+                  <img src="assets/img/rouf-modified.png" class="img-fluid rounded-circle" alt="Dr. Muhammad Abdur Rouf"
+                    style="max-width: 100px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body py-2">
+                    <h6 class="card-title mb-1"><a class="text-primary text-decoration-none"
+                        href="http://discipline.ku.ac.bd/fmrt/faculty/roufku" target="_blank">Dr. Muhammad Abdur Rouf</a></h6>
+                    <p class="small text-muted mb-2"><em>Professor and Head</em>, Fisheries and Marine Resource Technology, Khulna University</p>
+                    <p class="small mb-0 fst-italic">"Mr. Golder is very sound in team work and has good leading capacity. He is highly skilled in running various data management software's like R studio, ODV, ArcGIS, SeaDAS, SPSS, Python."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2 p-2 shadow-sm">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-3 text-center">
+                  <img src="assets/img/saiful-modified.png" class="img-fluid rounded-circle" alt="Shikder Saiful Islam"
+                    style="max-width: 100px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body py-2">
+                    <h6 class="card-title mb-1"><a class="text-primary text-decoration-none"
+                        href="http://discipline.ku.ac.bd/fmrt/faculty/shikdersaiful.islam" target="_blank">Shikder Saiful Islam</a></h6>
+                    <p class="small text-muted mb-2"><em>Associate Professor</em>, Khulna University</p>
+                    <p class="small mb-0 fst-italic">"Mr. Golder is an independent researcher. He is very sincere and praiseworthy in his assigned activities. I found him very active in analyzing research data and interpreting it for scientific publications."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2 p-2 shadow-sm">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-3 text-center">
+                  <img src="assets/img/joyanta-modified.png" class="img-fluid rounded-circle" alt="Joyanta Bir"
+                    style="max-width: 100px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body py-2">
+                    <h6 class="card-title mb-1"><a class="text-primary text-decoration-none"
+                        href="http://discipline.ku.ac.bd/fmrt/faculty/joy" target="_blank">Joyanta Bir</a></h6>
+                    <p class="small text-muted mb-2"><em>Associate Professor</em>, Khulna University</p>
+                    <p class="small mb-0 fst-italic">"Mr. Golder is very enthusiastic and energetic to his work and research. He understands scientific processes and easily recognizes theories, paradigms, and concepts within the marine environment."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title text-uppercase">Work Experience</h3>
             <div class="company-list">
-              <!-- BMT -->
-              <div class="company-card">
-                <div class="company-logo"><img src="assets/img/BMT_logo.png" alt="BMT logo" loading="lazy"
-                    decoding="async"></div>
-                <div class="company-body">
-                  <div class="company-header">
-                    <h4 class="company-name">BMT</h4>
-                    <a href="https://www.linkedin.com/in/ronygolder/" target="_blank"
-                      class="btn btn-outline-primary btn-sm mb-2" style="margin-left:2px;">
-                      <i class="icofont-link"></i> LinkedIn
-                    </a>
-                    <div class="company-meta">Jan 2026 – Present</div>
-                    <div class="company-location">Perth, Western Australia, Australia</div>
-                  </div>
-                  <div class="role-list">
-                    <div class="role-item">
-                      <div class="role-title">Consultant <span class="role-type">· Part-time</span></div>
-                      <div class="role-site">On-site</div>
-                      <ul>
-                        <li>Evaluate BMT-developed numerical model performance using satellite and in situ validation.
-                        </li>
-                        <li>Analyse hydrodynamics, water quality, and biogeochemical processes for applied studies.</li>
-                        <li>Post-process and analyse TUFLOW FV model outputs using Python.</li>
-                        <li>Support data handling, visualisation, and interpretation of model results.</li>
-                      </ul>
-                      <div class="role-skills"><span class="chip">Numerical modelling</span><span class="chip">TUFLOW
-                          FV</span><span class="chip">Python</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <!-- The University of Western Australia -->
               <div class="company-card">
                 <div class="company-logo"><img src="assets/img/logo/UWA_logo.png" alt="UWA logo" loading="lazy"
@@ -788,12 +925,25 @@
                       class="btn btn-outline-primary btn-sm mb-2" style="margin-left:2px;">
                       <i class="icofont-link"></i> UWA Profile
                     </a>
-                    <div class="company-meta">Dec 2025 – Present</div>
+                    <div class="company-meta">Dec 2025 – Present · 8 mos</div>
                     <div class="company-location">Perth, Western Australia, Australia</div>
                   </div>
-                  <div class="role-list">
+                  <div class="role-list multiple">
+                    <div class="role-item">
+                      <div class="role-title">Research Fellow <span class="role-type">· Full-time</span></div>
+                      <div class="role-meta">Jun 2026 – Present · 2 mos</div>
+                      <div class="role-site">On-site</div>
+                      <ul>
+                        <li>Working on water quality assessment of Darwin Harbour.</li>
+                        <li>TUFLOW model validation, data analysis, and visualisation.</li>
+                        <li>Support research projects related to coastal and marine ecosystems.</li>
+                      </ul>
+                      <div class="role-skills"><span class="chip">Water quality</span><span
+                          class="chip">TUFLOW</span><span class="chip">Model validation</span></div>
+                    </div>
                     <div class="role-item">
                       <div class="role-title">Research Officer <span class="role-type">· Part-time</span></div>
+                      <div class="role-meta">Dec 2025 – Jun 2026 · 7 mos</div>
                       <div class="role-site">Hybrid</div>
                       <ul>
                         <li>Coordinate with the Centre for Water and Spatial Science on AED model quality assurance.
@@ -809,31 +959,67 @@
                   </div>
                 </div>
               </div>
-              <!-- UWA -->
+              <!-- BMT -->
+              <div class="company-card">
+                <div class="company-logo"><img src="assets/img/BMT_logo.png" alt="BMT logo" loading="lazy"
+                    decoding="async"></div>
+                <div class="company-body">
+                  <div class="company-header">
+                    <h4 class="company-name">BMT</h4>
+                    <a href="https://www.bmt.org/" target="_blank" class="btn btn-outline-primary btn-sm mb-2"
+                      style="margin-left:2px;">
+                      <i class="icofont-link"></i> BMT Website
+                    </a>
+                    <div class="company-meta">Jan 2026 – May 2026 · 5 mos</div>
+                    <div class="company-location">Perth, Western Australia, Australia</div>
+                  </div>
+                  <div class="role-list">
+                    <div class="role-item">
+                      <div class="role-title">Consultant <span class="role-type">· Part-time</span></div>
+                      <div class="role-site">On-site</div>
+                      <ul>
+                        <li>Evaluated BMT-developed numerical model performance by validating against satellite and in
+                          situ observations.</li>
+                        <li>Analysed hydrodynamics, water quality, and biogeochemical processes for investigative and
+                          applied studies.</li>
+                        <li>Post-processed and analysed TUFLOW FV model outputs using Python.</li>
+                        <li>Supported data handling, visualisation, and interpretation of model results.</li>
+                      </ul>
+                      <div class="role-skills"><span class="chip">Numerical modelling</span><span class="chip">TUFLOW
+                          FV</span><span class="chip">Python</span><span class="chip">Water quality</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- WAMSI -->
               <div class="company-card">
                 <div class="company-logo"><img src="assets/img/logo/wamsi.webp" alt="WAMSI logo" loading="lazy"
                     decoding="async"></div>
                 <div class="company-body">
                   <div class="company-header">
                     <h4 class="company-name">Western Australian Marine Science Institution</h4>
-                    <a href="https://research-repository.uwa.edu.au/en/persons/md-rony-golder" target="_blank"
-                      class="btn btn-outline-primary btn-sm mb-2" style="margin-left:2px;">
-                      <i class="icofont-link"></i> WAMSI Profile
+                    <a href="https://wamsi.org.au/" target="_blank" class="btn btn-outline-primary btn-sm mb-2"
+                      style="margin-left:2px;">
+                      <i class="icofont-link"></i> WAMSI
                     </a>
-                    <div class="company-meta">Jan 2024 – Present</div>
+                    <div class="company-meta">Jan 2024 – Jun 2026 · 2 yrs 6 mos</div>
                     <div class="company-location">Perth, Western Australia, Australia</div>
                   </div>
                   <div class="role-list">
                     <div class="role-item">
-                      <div class="role-title">Research Assistant (Data Analyst)</div>
+                      <div class="role-title">Research Assistant (Data Analyst) <span class="role-type">·
+                          Part-time</span></div>
+                      <div class="role-site">Hybrid</div>
                       <ul>
-                        <li>Data QC, extraction, standardization, and pipeline development for SEAF (WAMSI/WABSI).</li>
-                        <li>Satellite data processing and analysis, Mapping, Visualization.</li>
-                        <li>Develop Dashboards for marine environmental data visualization.</li>
-                        <li>Support marine environmental analytics and reporting workflows.</li>
-
+                        <li>Data quality control, extraction, and standardisation for SEAF project (WAMSI/WABSI).</li>
+                        <li>Developed automated data pipelines for marine environmental monitoring.</li>
+                        <li>Processing and analysing satellite datasets, producing geospatial maps and visualisations.
+                        </li>
+                        <li>Developed interactive dashboards for marine environmental data visualisation.</li>
+                        <li>Support marine ecosystem monitoring and analytics reporting workflows.</li>
                       </ul>
-                      <div class="role-skills"><span class="chip">Data QC</span><span class="chip">ETL</span><span
+                      <div class="role-skills"><span class="chip">Satellite Data</span><span class="chip">Remote
+                          Sensing</span><span class="chip">Data QC</span><span class="chip">ETL</span><span
                           class="chip">Marine analytics</span></div>
                     </div>
                   </div>
@@ -850,12 +1036,13 @@
                       target="_blank" class="btn btn-outline-success btn-sm mb-2 curtin-profile-btn">
                       <i class="icofont-link"></i> Curtin Profile
                     </a>
-                    <div class="company-meta">Jul 2023 – Present · 2 yrs 1 mo</div>
+                    <div class="company-meta">Sep 2022 – Present · 3 yrs 11 mos</div>
                     <div class="company-location">Perth, Western Australia, Australia</div>
                   </div>
-                  <div class="role-list">
+                  <div class="role-list multiple">
                     <div class="role-item">
                       <div class="role-title">Casual Academic <span class="role-type">· Contract</span></div>
+                      <div class="role-meta">Jul 2023 – Present · 3 yrs 1 mo</div>
                       <div class="role-site">On-site</div>
                       <div class="card p-2 mb-2 bg-light border-0 shadow-sm">
                         <h5 class="mb-2 text-success"><i class="icofont-education"></i> Teaching & Demonstration</h5>
@@ -879,14 +1066,40 @@
                             </ul>
                           </div>
                         </div>
-                        <!-- <ul class="mb-2">
-                          <li>Conducting Sessional, Teaching, Field Trip</li>
-                          <li>Small project supervision</li>
-                          <li>Assignment and Marking</li>
-                        </ul> -->
                         <div class="role-skills"><span class="chip">Teaching</span><span
-                            class="chip">Fieldwork</span><span class="chip">Assessment</span></div>
+                            class="chip">Fieldwork</span><span class="chip">Assessment</span><span
+                            class="chip">SNAP</span><span class="chip">ArcGIS Desktop</span></div>
                       </div>
+                    </div>
+                    <div class="role-item">
+                      <div class="role-title">Doctoral Student <span class="role-type">· Full-time</span></div>
+                      <div class="role-meta">Sep 2022 – Present · 3 yrs 11 mos</div>
+                      <ul>
+                        <li>Exploring decadal responses and dynamics of Southern Ocean phytoplankton using multi-decade
+                          satellite-derived data (Chlorophyll, SST, wind, SSH, climate indices) and ocean model outputs.
+                        </li>
+                        <li>Extracting and processing large volumes of satellite data from ESA and NASA archives.</li>
+                        <li>Exploring long-term trends of phytoplankton in the entire Southern Ocean.</li>
+                        <li>Assessing relationships with climate drivers and predicting future changes of phytoplankton
+                          and Southern Ocean climate.</li>
+                        <li>Applying statistical and machine learning techniques for temporal signal assessment.</li>
+                      </ul>
+                      <div class="role-skills"><span class="chip">Data Analysis</span><span class="chip">R (Programming
+                          Language)</span><span class="chip">Python</span><span class="chip">Remote Sensing</span><span
+                          class="chip">Machine Learning</span></div>
+                    </div>
+                    <div class="role-item">
+                      <div class="role-title">Research Officer <span class="role-type">· Contract</span></div>
+                      <div class="role-meta">Feb 2026 – May 2026 · 4 mos</div>
+                      <div class="role-site">Hybrid</div>
+                      <ul>
+                        <li>Worked on the Polarscope database project funded by the Australian Centre of Excellence in
+                          Antarctic Science.</li>
+                        <li>Focused on Antarctic and Southern Ocean database development using both remote sensing and
+                          in situ data.</li>
+                      </ul>
+                      <div class="role-skills"><span class="chip">Antarctic Science</span><span class="chip">Database
+                          development</span><span class="chip">Remote sensing</span></div>
                     </div>
                   </div>
                 </div>
@@ -1010,354 +1223,474 @@
               <!-- Visiting Fellow (separate short stint) -->
 
             </div>
-            <h3 class="resume-title text-uppercase">Ocean Cruises</h3>
-            <div class="cruise-list">
-              <div class="cruise-card">
-                <div class="cruise-icon"><i class="icofont-ship"></i></div>
-                <div class="cruise-body">
-                  <h4>Expedition To the Swatch of No Ground in the Bay of Bengal with BNS Surma (Bangladesh Navy Ship)
-                  </h4>
-                  <div class="cruise-meta"><span class="date-badge">23–25 January, 2017</span> <em>Arranged by
-                      Bangladesh Navy and Khulna University</em></div>
-                </div>
-              </div>
-              <div class="cruise-card">
-                <div class="cruise-icon"><i class="icofont-ship"></i></div>
-                <div class="cruise-body">
-                  <h4>Expedition To the edge of Bangladesh Maritime Boundary in the Bay of Bengal with BNS Turag</h4>
-                  <div class="cruise-meta"><span class="date-badge">5–7 December, 2019</span> <em>Arranged by Bangladesh
-                      Navy and Khulna University</em></div>
+            <h3 class="resume-title text-uppercase"><i class="icofont-trophy"></i> Honours and Awards</h3>
+
+            <!-- Awards Summary Dashboard -->
+            <div class="card border-0 shadow-sm mb-4"
+              style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+              <div class="card-body text-white py-3">
+                <div class="row text-center g-2">
+                  <div class="col-6 col-md-3">
+                    <h4 class="mb-0 fw-bold">A$250k+</h4>
+                    <small style="font-size: 0.85rem; opacity: 0.9;">Total Funding</small>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <h4 class="mb-0 fw-bold">14</h4>
+                    <small style="font-size: 0.85rem; opacity: 0.9;">Awards Received</small>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <h4 class="mb-0 fw-bold">6</h4>
+                    <small style="font-size: 0.85rem; opacity: 0.9;">Major Grants</small>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <h4 class="mb-0 fw-bold">2012-2026</h4>
+                    <small style="font-size: 0.85rem; opacity: 0.9;">Award Period</small>
+                  </div>
                 </div>
               </div>
             </div>
-            <h3 class="resume-title text-uppercase">Honours and Awards</h3>
+
+            <!-- Major Research Grants & Projects -->
+            <h5 class="text-primary mb-3 mt-4"><i class="icofont-chart-growth"></i> Major Research Grants & Projects
+            </h5>
             <div class="awards-list">
-              <div class="award-card">
+              <div class="award-card border-success">
                 <div class="award-header">
-                  <h4>International Doctoral Mobility Scholarship - Spring 2025</h4>
-                  <span class="award-year">2025</span>
+                  <h4>ACEAS Impact Project Grant</h4>
+                  <span class="award-year">2026</span>
+                  <span class="badge bg-success ms-2">New</span>
                 </div>
-                <p><em>Fellowship</em></p>
-                <div class="award-benefit">Funding: €2,750 (ISblue) + A$3,200 (Curtin University)</div>
-              </div>
-              <div class="award-card">
-                <div class="award-header">
-                  <h4>Curtin HDR Dissemination Grant</h4>
-                  <span class="award-year">2025</span>
-                </div>
-                <p><em>Curtin University</em></p>
-                <div class="award-benefit">Funding: A$2,500</div>
-              </div>
-              <div class="award-card">
-                <div class="award-header">
-                  <h4>AGU Student Travel Grant</h4>
-                  <span class="award-year">2024</span>
-                </div>
-                <p><em>American Geophysical Union</em></p>
-                <div class="award-benefit">Funding: US$1,000</div>
-              </div>
-              <div class="award-card">
-                <div class="award-header">
-                  <h4>Curtin RSSRG Grant</h4>
-                  <span class="award-year">2024</span>
-                </div>
-                <p><em>Curtin University</em></p>
+                <p><em>ARC Australian Centre for Excellence in Antarctic Science (ACEAS)</em></p>
+                <p><strong>Project:</strong> "Open Access digital resource dedicated to Earth Observation (remote
+                  sensing) and in-situ data"</p>
                 <ul class="award-benefits">
-                  <li>Funding: <strong>A$2,850</strong> — CSIRO Internship (Aug–Nov 2024), Hobart</li>
-                  <li>Funding: <strong>A$1,507</strong> — IOCCG SLS 2024 travel (4–16 Nov), Hyderabad</li>
+                  <li><strong>Role:</strong> Content Lead & Principal Investigator</li>
+                  <li><strong>Total Funding: A$56,112</strong></li>
+                  <li><strong>Duration:</strong> March 2026 - June 2026</li>
+                  <li><strong>Team:</strong> Prof Peter Strutton (Project Supervisor), Prof David Antoine (Satellite
+                    Data Advisor)</li>
                 </ul>
               </div>
               <div class="award-card">
                 <div class="award-header">
-                  <h4>ACEAS Travel Grant</h4>
-                  <span class="award-year">2023</span>
+                  <h4>ACEAS Write-up Scholarship</h4>
+                  <span class="award-year">2026</span>
                 </div>
+                <p><em>ARC Australian Centre for Excellence in Antarctic Science (ACEAS)</em></p>
                 <ul class="award-benefits">
-                  <li>Funding: <strong>A$1,500</strong> — ACEAS Research Forum (7–8 Nov 2023), Hobart, Tasmania</li>
-                  <li>Funding: <strong>A$2,450</strong> — FishMIP Conference (2025)</li>
+                  <li>Funding: <strong>A$5,913.85</strong> (2 months)</li>
+                  <li>Top-up: <strong>A$769</strong></li>
+                  <li>Purpose: Publication support after thesis submission</li>
                 </ul>
-              </div>
-              <div class="award-card">
-                <div class="award-header">
-                  <h4>Curtin Research Engagement Grant — Travel Support (A$2,500)</h4>
-                  <span class="award-year">2023</span>
-                </div>
-                <div class="award-benefit">Funding: A$2,500 — Southern Ocean Observing System (SOOS) Symposium (14–18
-                  Aug 2023), Hobart, Tasmania</div>
-              </div>
-              <div class="award-card">
-                <div class="award-header">
-                  <h4>Second Place — Jupyter Notebook Competition (Prize: €1,500)</h4>
-                  <span class="award-year">2022</span>
-                </div>
-                <p><em>Awarded by EUMETSAT, Copernicus/ECMWF, Mercator Ocean International, and the EEA</em></p>
-                <div class="award-benefit">Prize: €1,500</div>
               </div>
               <div class="award-card">
                 <div class="award-header">
                   <h4>Curtin International Postgraduate Research Scholarship</h4>
-                  <span class="award-year">2022</span>
+                  <span class="award-year">2022-2026</span>
+                  <span class="badge bg-primary ms-2">PhD Funding</span>
                 </div>
-                <p><em>Issued by Curtin University, Australia</em></p>
+                <p><em>Curtin University, Australia</em></p>
                 <ul class="award-benefits">
-                  <li>Funding: <strong>A$37,500</strong> per year (stipend, 3.5 years)</li>
+                  <li>Stipend: <strong>A$37,500</strong> per year (3.5 years)</li>
                   <li>Top-up scholarship: <strong>A$5,000</strong> per year (3.5 years)</li>
                   <li>Tuition fees: <strong>Waived</strong> (4 years)</li>
-                  <li>OSHC (Overseas Student Health Cover) couple insurance (57 months): <strong>A$12,419</strong></li>
-                  <li>Couple tickets: <strong>A$1,965.59</strong></li>
+                  <li>Total value: <strong>~A$165,000</strong></li>
                 </ul>
               </div>
-              <div class="award-card">
-                <div class="award-header">
-                  <h4>DAAD Scholarship</h4>
-                  <span class="award-year">2022</span>
+
+              <!-- International Fellowships & Travel Grants -->
+              <h5 class="text-success mb-3 mt-4"><i class="icofont-airplane-alt"></i> International Fellowships & Travel
+                Grants</h5>
+              <div class="awards-list">
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>International Doctoral Mobility Scholarship</h4>
+                    <span class="award-year">2025</span>
+                  </div>
+                  <p><em>Fellowship</em></p>
+                  <div class="award-benefit">Funding: €2,750 (ISblue) + A$3,200 (Curtin University)</div>
                 </div>
-                <p><em>German Academic Exchange Service (DAAD), Germany</em> — ISATEC Program, University of Bremen
-                  (awarded for Master’s studies, declined in favor of other opportunities)</p>
-                <ul class="award-benefit">
-                  <li>Funding: <strong>€925/month</strong> for 2 years (Honours)</li>
-                  <li>Full comprehensive insurance</li>
-                </ul>
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>Curtin HDR Dissemination Grant</h4>
+                    <span class="award-year">2025</span>
+                  </div>
+                  <p><em>Curtin University</em></p>
+                  <div class="award-benefit">Funding: A$2,500</div>
+                </div>
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>AGU Student Travel Grant</h4>
+                    <span class="award-year">2024</span>
+                  </div>
+                  <p><em>American Geophysical Union</em></p>
+                  <div class="award-benefit">Funding: US$1,000</div>
+                </div>
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>Curtin RSSRG Grant</h4>
+                    <span class="award-year">2024</span>
+                  </div>
+                  <p><em>Curtin University</em></p>
+                  <ul class="award-benefits">
+                    <li>Funding: <strong>A$2,850</strong> — CSIRO Internship (Aug–Nov 2024), Hobart</li>
+                    <li>Funding: <strong>A$1,507</strong> — IOCCG SLS 2024 travel (4–16 Nov), Hyderabad</li>
+                  </ul>
+                </div>
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>ACEAS Travel Grant</h4>
+                    <span class="award-year">2023</span>
+                  </div>
+                  <ul class="award-benefits">
+                    <li>Funding: <strong>A$1,500</strong> — 3rd ACEAS Research Forum (7–8 Nov 2023), Hobart, Tasmania
+                    </li>
+                    <li>Funding: <strong>A$2,450</strong> — FishMIP Conference (2025)</li>
+                    <li>Funding: <strong>A$2,570</strong> — 4th ACEAS Research Forum Symposium (2025), Hobart, Tasmania
+                    </li>
+                    <li>Funding: <strong>A$7,100</strong> — Ocean Sciences Meeting (2026)</li>
+                  </ul>
+                </div>
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>Curtin Research Engagement Grant — Travel Support (A$2,500)</h4>
+                    <span class="award-year">2023</span>
+                  </div>
+                  <div class="award-benefit">Funding: A$2,500 — Southern Ocean Observing System (SOOS) Symposium (14–18
+                    Aug 2023), Hobart, Tasmania</div>
+                </div>
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>DAAD Scholarship</h4>
+                    <span class="award-year">2022</span>
+                    <span class="badge bg-info text-dark ms-2">Germany</span>
+                  </div>
+                  <p><em>German Academic Exchange Service (DAAD)</em> — ISATEC Program, University of Bremen</p>
+                  <div class="award-benefit">Funding: <strong>€925/month</strong> for 2 years • Full insurance (Awarded,
+                    declined for PhD opportunity)</div>
+                </div>
               </div>
-              <div class="award-card">
-                <div class="award-header">
-                  <h4>National Science and Technology Fellowship</h4>
-                  <span class="award-year">2020</span>
+
+              <!-- Competitive Awards & Recognition -->
+              <h5 class="text-warning mb-3 mt-4"><i class="icofont-star"></i> Competitive Awards & Recognition</h5>
+              <div class="awards-list">
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>Second Place — Jupyter Notebook Competition</h4>
+                    <span class="award-year">2022</span>
+                    <span class="badge bg-warning text-dark ms-2">🥈 2nd Place</span>
+                  </div>
+                  <p><em>EUMETSAT, Copernicus/ECMWF, Mercator Ocean International, and EEA</em></p>
+                  <div class="award-benefit">Prize: <strong>€1,500</strong></div>
                 </div>
-                <p><em>Ministry of Science and Technology, Bangladesh</em></p>
-                <div class="award-benefit">Funding: BDT 54,000</div>
               </div>
-              <div class="award-card">
-                <div class="award-header">
-                  <h4>Merit Scholarship in Undergraduate Study</h4>
-                  <span class="award-year">2016–2019</span>
+
+              <!-- Academic Scholarships -->
+              <h5 class="text-info mb-3 mt-4"><i class="icofont-graduate-alt"></i> Academic Scholarships</h5>
+              <div class="awards-list">
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>National Science and Technology Fellowship</h4>
+                    <span class="award-year">2020</span>
+                  </div>
+                  <p><em>Ministry of Science and Technology, Bangladesh</em></p>
+                  <div class="award-benefit">Funding: BDT 54,000</div>
                 </div>
-                <p><em>Life Science School, Khulna University</em></p>
-              </div>
-              <div class="award-card">
-                <div class="award-header">
-                  <h4>DBBL Scholarship</h4>
-                  <span class="award-year">2012–2017</span>
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>Merit Scholarship in Undergraduate Study</h4>
+                    <span class="award-year">2016–2019</span>
+                  </div>
+                  <p><em>Life Science School, Khulna University</em> — Merit-based scholarship for academic excellence
+                  </p>
                 </div>
-                <p><em>Dutch-Bangla Bank Foundation, Dhaka, Bangladesh</em> — Secondary (1224) & Higher Secondary Level
-                  (1144)</p>
-                <ul class="award-benefits">
-                  <li>Secondary level: BDT 2,000 per month (2 years)</li>
-                  <li>Higher Secondary level: BDT 2,500 per month (4 years)</li>
-                </ul>
+                <div class="award-card">
+                  <div class="award-header">
+                    <h4>DBBL Scholarship</h4>
+                    <span class="award-year">2012–2017</span>
+                  </div>
+                  <p><em>Dutch-Bangla Bank Foundation, Dhaka, Bangladesh</em></p>
+                  <ul class="award-benefits">
+                    <li>Secondary level: BDT 2,000/month (2 years)</li>
+                    <li>Higher Secondary level: BDT 2,500/month (4 years)</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- ======= Recommendations Section ======= -->
 
-    <!-- ======= Technical Skills (Duplicate Section at End) ======= -->
-    <section id="technical-skills-end" class="skills section-bg">
+    <!-- ======= Skills & Expertise Dashboard ======= -->
+    <section id="skills-expertise" class="skills-expertise section-bg py-5">
       <div class="container-fluid">
         <div class="section-title">
-          <h2>Technical Skills</h2>
+          <h2><i class="icofont-tools"></i> Skills & Expertise</h2>
+          <p class="text-muted">Comprehensive technical capabilities spanning programming, geospatial analysis, remote
+            sensing, and marine science</p>
         </div>
-        <div class="row skills-content">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h4>Programming Language</h4>
-            <div class="progress">
-              <span class="skill">R <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+
+        <!-- Skills Categories -->
+        <div class="row g-4">
+
+          <!-- Programming & Data Science -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="skill-icon me-3"
+                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="icofont-code text-white" style="font-size: 24px;"></i>
+                  </div>
+                  <h5 class="mb-0">Programming & Data Science</h5>
                 </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Python <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="skills-list">
+                  <span class="badge bg-primary mb-2 me-1">Python</span>
+                  <span class="badge bg-primary mb-2 me-1">R</span>
+                  <span class="badge bg-secondary mb-2 me-1">Pandas</span>
+                  <span class="badge bg-secondary mb-2 me-1">NumPy</span>
+                  <span class="badge bg-secondary mb-2 me-1">Matplotlib</span>
+                  <span class="badge bg-secondary mb-2 me-1">Seaborn</span>
+                  <span class="badge bg-secondary mb-2 me-1">Jupyter</span>
+                  <span class="badge bg-secondary mb-2 me-1">RStudio</span>
+                  <div class="mt-2 small text-muted">
+                    <strong>Experience:</strong> 6+ years
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h4>Remote Sensing</h4>
-            <div class="progress">
-              <span class="skill">SeaDAS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+
+          <!-- GIS & Geospatial -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="skill-icon me-3"
+                    style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="icofont-map text-white" style="font-size: 24px;"></i>
+                  </div>
+                  <h5 class="mb-0">GIS & Geospatial</h5>
+                </div>
+                <div class="skills-list">
+                  <span class="badge bg-success mb-2 me-1">ArcGIS Pro</span>
+                  <span class="badge bg-success mb-2 me-1">ArcGIS Online</span>
+                  <span class="badge bg-success mb-2 me-1">QGIS</span>
+                  <span class="badge bg-secondary mb-2 me-1">ArcGIS Enterprise</span>
+                  <span class="badge bg-secondary mb-2 me-1">ArcGIS Dashboards</span>
+                  <span class="badge bg-secondary mb-2 me-1">StoryMaps</span>
+                  <span class="badge bg-secondary mb-2 me-1">Experience Builder</span>
+                  <span class="badge bg-secondary mb-2 me-1">Spatial Analysis</span>
+                  <span class="badge bg-secondary mb-2 me-1">Cartography</span>
+                  <div class="mt-2 small text-muted">
+                    <strong>Experience:</strong> 7+ years
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="progress">
-              <span class="skill">SNAP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          </div>
+
+          <!-- Remote Sensing & Ocean Color -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="skill-icon me-3"
+                    style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="icofont-satellite text-white" style="font-size: 24px;"></i>
+                  </div>
+                  <h5 class="mb-0">Remote Sensing</h5>
+                </div>
+                <div class="skills-list">
+                  <span class="badge bg-info text-dark mb-2 me-1">SeaDAS</span>
+                  <span class="badge bg-info text-dark mb-2 me-1">SNAP</span>
+                  <span class="badge bg-info text-dark mb-2 me-1">Google Earth Engine</span>
+                  <span class="badge bg-secondary mb-2 me-1">MODIS</span>
+                  <span class="badge bg-secondary mb-2 me-1">Sentinel</span>
+                  <span class="badge bg-secondary mb-2 me-1">Landsat</span>
+                  <span class="badge bg-secondary mb-2 me-1">Ocean Color</span>
+                  <span class="badge bg-secondary mb-2 me-1">Image Processing</span>
+                  <span class="badge bg-secondary mb-2 me-1">Change Detection</span>
+                  <div class="mt-2 small text-muted">
+                    <strong>Experience:</strong> 6+ years
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modeling & Simulation -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="skill-icon me-3"
+                    style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="icofont-chart-flow text-white" style="font-size: 24px;"></i>
+                  </div>
+                  <h5 class="mb-0">Modeling & Simulation</h5>
+                </div>
+                <div class="skills-list">
+                  <span class="badge bg-warning text-dark mb-2 me-1">TUFLOW FV</span>
+                  <span class="badge bg-warning text-dark mb-2 me-1">AED Model</span>
+                  <span class="badge bg-warning text-dark mb-2 me-1">Bluelink BRAN</span>
+                  <span class="badge bg-secondary mb-2 me-1">Hydrodynamics</span>
+                  <span class="badge bg-secondary mb-2 me-1">Water Quality</span>
+                  <span class="badge bg-secondary mb-2 me-1">Biogeochemistry</span>
+                  <span class="badge bg-secondary mb-2 me-1">Model Validation</span>
+                  <span class="badge bg-secondary mb-2 me-1">Numerical Modeling</span>
+                  <div class="mt-2 small text-muted">
+                    <strong>Experience:</strong> 2+ years
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Additional Skills Row -->
+        <div class="row g-4 mt-1">
+
+          <!-- Data Management & Databases -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="skill-icon me-3"
+                    style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="icofont-database text-white" style="font-size: 24px;"></i>
+                  </div>
+                  <h5 class="mb-0">Data Management</h5>
+                </div>
+                <div class="skills-list">
+                  <span class="badge bg-dark mb-2 me-1">SQL</span>
+                  <span class="badge bg-dark mb-2 me-1">PostgreSQL</span>
+                  <span class="badge bg-dark mb-2 me-1">Data Pipelines</span>
+                  <span class="badge bg-secondary mb-2 me-1">ETL</span>
+                  <span class="badge bg-secondary mb-2 me-1">Data QC</span>
+                  <span class="badge bg-secondary mb-2 me-1">Data Standardization</span>
+                  <span class="badge bg-secondary mb-2 me-1">Big Data Processing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Statistical & Machine Learning -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="skill-icon me-3"
+                    style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="icofont-brainstorm text-dark" style="font-size: 24px;"></i>
+                  </div>
+                  <h5 class="mb-0">Statistical Analysis & ML</h5>
+                </div>
+                <div class="skills-list">
+                  <span class="badge bg-danger mb-2 me-1">SPSS</span>
+                  <span class="badge bg-danger mb-2 me-1">Time-series Analysis</span>
+                  <span class="badge bg-secondary mb-2 me-1">Machine Learning</span>
+                  <span class="badge bg-secondary mb-2 me-1">Deep Learning</span>
+                  <span class="badge bg-secondary mb-2 me-1">Statistical Modeling</span>
+                  <span class="badge bg-secondary mb-2 me-1">Data Visualization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development & Visualization -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="skill-icon me-3"
+                    style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="icofont-web text-dark" style="font-size: 24px;"></i>
+                  </div>
+                  <h5 class="mb-0">Web & Dashboards</h5>
+                </div>
+                <div class="skills-list">
+                  <span class="badge" style="background-color: #e44d26; color: white;" class="mb-2 me-1">HTML5</span>
+                  <span class="badge" style="background-color: #264de4; color: white;" class="mb-2 me-1">CSS3</span>
+                  <span class="badge" style="background-color: #f0db4f; color: black;"
+                    class="mb-2 me-1">JavaScript</span>
+                  <span class="badge bg-secondary mb-2 me-1">Bootstrap</span>
+                  <span class="badge bg-secondary mb-2 me-1">Interactive Dashboards</span>
+                  <span class="badge bg-secondary mb-2 me-1">Web Mapping</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Domain Expertise -->
+        <div class="row mt-4">
+          <div class="col-12" data-aos="fade-up">
+            <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+              <div class="card-body text-white py-4">
+                <h5 class="text-white mb-3"><i class="icofont-anchor"></i> Domain Expertise & Research Focus</h5>
+                <div class="row text-center">
+                  <div class="col-md-3 col-6 mb-3">
+                    <div class="domain-item">
+                      <i class="icofont-sea-plane" style="font-size: 32px;"></i>
+                      <h6 class="mt-2 mb-0">Ocean Color Remote Sensing</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 mb-3">
+                    <div class="domain-item">
+                      <i class="icofont-wave" style="font-size: 32px;"></i>
+                      <h6 class="mt-2 mb-0">Biological Oceanography</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 mb-3">
+                    <div class="domain-item">
+                      <i class="icofont-water-drop" style="font-size: 32px;"></i>
+                      <h6 class="mt-2 mb-0">Water Quality Assessment</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 mb-3">
+                    <div class="domain-item">
+                      <i class="icofont-fish" style="font-size: 32px;"></i>
+                      <h6 class="mt-2 mb-0">Marine Ecology</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 mb-3">
+                    <div class="domain-item">
+                      <i class="icofont-snow-temp" style="font-size: 32px;"></i>
+                      <h6 class="mt-2 mb-0">Antarctic Science</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 mb-3">
+                    <div class="domain-item">
+                      <i class="icofont-recycle-alt" style="font-size: 32px;"></i>
+                      <h6 class="mt-2 mb-0">Biogeochemical Processes</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 mb-3">
+                    <div class="domain-item">
+                      <i class="icofont-beach" style="font-size: 32px;"></i>
+                      <h6 class="mt-2 mb-0">Coastal Zone Management</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6 mb-3">
+                    <div class="domain-item">
+                      <i class="icofont-ecology" style="font-size: 32px;"></i>
+                      <h6 class="mt-2 mb-0">Environmental Science</h6>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <br>
-        <div class="row skills-content">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h4>GIS</h4>
-            <div class="progress">
-              <span class="skill">ArcGIS Pro (Desktop) <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">ArcGIS Online/Enterprise <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">QGIS <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h4>Website Design</h4>
-            <div class="progress">
-              <span class="skill">HTML <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row skills-content">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h4>Statistical Analysis</h4>
-            <div class="progress">
-              <span class="skill">SPSS<i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">MS Excel<i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h4>General</h4>
-            <div class="progress">
-              <span class="skill">MS Office (Word, PowerPoint, Publisher)<i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">MS Project <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
 
-    <!-- ======= Recommendations Section ======= -->
-    <section id="recommendations" class="recommendations section-bg">
-      <div class="container-fluid">
-        <div class="section-title">
-          <h2>Recommendations</h2>
-        </div>
-        <div>
-          <div class="card mb-2 p-1">
-            <div class="row g-0">
-              <div class="col-md-2">
-                <img src="assets/img/rouf-modified.png" class="img-fluid rounded-start" alt="Dr. Muhammad Abdur Rouf"
-                  height="150px" width="150px">
-              </div>
-              <div class="col-md-10">
-                <div class="card-body">
-                  <h5 class="card-title"><a class="text-primary"
-                      href="http://discipline.ku.ac.bd/fmrt/faculty/roufku">Dr. Muhammad Abdur Rouf</a></h5>
-                  <h6><em>Professor and Head</em>, Fisheries and Marine Resource Technology, Khulna University,
-                    Bangladesh</h6>
-                  <em>&rdquo;<b>Mr. Golder</b> is very sound in team work and has good leading capacity. I commend his
-                    talents and intellectual propensity and skills. He proved his capability of producing original
-                    thoughts and fulfilling the objectives in a research work. He is highly skilled in running various
-                    data management software’s like R studio, ODV, ArcGIS, SeaDAS, SPSS, Python (Jupyter
-                    notebook)&rdquo;</em>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-2 p-1">
-            <div class="row g-0">
-              <div class="col-md-2">
-                <img src="assets/img/saiful-modified.png" class="img-fluid rounded-start" alt="Shikder Saiful Islam"
-                  height="150px" width="150px">
-              </div>
-              <div class="col-md-10">
-                <div class="card-body">
-                  <h5 class="card-title"><a class="text-primary"
-                      href="http://discipline.ku.ac.bd/fmrt/faculty/shikdersaiful.islam">Shikder Saiful Islam</a></h5>
-                  <h6><em>Associate Professor</em>, Fisheries and Marine Resource Technology, Khulna University,
-                    Bangladesh</h6>
-                  <em>&rdquo;<b>Mr. Golder</b> is as an independent researcher in respect of designing a basic and
-                    fundamental research according to a research questions. He is very sincere and praiseworthy in his
-                    assigned activities. I found him very active in analyzing research data and interpreting it for
-                    scientific publications.&rdquo;</em>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-2 p-1">
-            <div class="row g-0">
-              <div class="col-md-2">
-                <img src="assets/img/joyanta-modified.png" class="img-fluid rounded-start" alt="Joyanta Bir"
-                  height="150px" width="150px">
-              </div>
-              <div class="col-md-10">
-                <div class="card-body">
-                  <h5 class="card-title"><a class="text-primary"
-                      href="http://discipline.ku.ac.bd/fmrt/faculty/joy">Joyanta Bir</a></h5>
-                  <h6><em>Associate Professor</em>, Fisheries and Marine Resource Technology, Khulna University,
-                    Bangladesh</h6>
-                  <em>&rdquo;As a course teacher I have found, <b>Mr. Golder</b> is very enthusiastic and energetic to
-                    his work and research. He understands scientific processes and easily recognizes and use of
-                    theories, paradigms, concepts and principles, to design and undertake primary research within the
-                    context of the marine environment and marine biology.&rdquo;</em>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
   <footer id="footer">
     <div class="container">
