@@ -1,2 +1,19 @@
 # Claude Code session files
 .claude/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+.tex
+
+# Academic CV PDF (generated from LaTeX)
+Golder_Academic_CV.pdf
